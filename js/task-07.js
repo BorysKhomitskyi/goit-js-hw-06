@@ -6,4 +6,3 @@ const setFontSize = () => {
 };
 
 inputRange.addEventListener("input", setFontSize);
-

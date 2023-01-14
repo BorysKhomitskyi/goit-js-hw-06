@@ -13,4 +13,3 @@ function newBgColor() {
   body.style.backgroundColor = randomColor;
   colorName.textContent = randomColor;
 };
-

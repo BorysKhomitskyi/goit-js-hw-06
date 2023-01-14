@@ -28,5 +28,3 @@ console.log('Category:', lastElTitle.textContent);
 
 const lastElLi = lastEl.lastElementChild.children;
 console.log('Elements:', lastElLi.length);
-
-

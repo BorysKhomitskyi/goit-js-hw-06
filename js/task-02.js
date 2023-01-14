@@ -17,7 +17,3 @@ const navItems = ingredients.map(ingredient => {
 });
 
 listEl.append(...navItems);
-
-
-
-
