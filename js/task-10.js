@@ -33,4 +33,4 @@ function createBoxes(amount) {
 function destroyBoxes() {
   divBoxes.textContent = ""; 
   inputElement.value = "";
-}
+};
