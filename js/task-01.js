@@ -1,30 +1,12 @@
-const allCategories = document.querySelector("#categories");
-
 const navEl = document.querySelectorAll(".item");
 console.log('Number of categories:', navEl.length);
 
-const firstEl = allCategories.firstElementChild;
+navEl.forEach((element) => {
+    let elementTitle = element.querySelector("h2").textContent;
 
-const firstElTitle = firstEl.firstElementChild;
-console.log('Category:', firstElTitle.textContent);
+    let titleElements = element.querySelectorAll("li");
+    let titleElementsLength = titleElements.length;
 
-const firstElLi = firstEl.lastElementChild.children;
-console.log('Elements:', firstElLi.length);
-
-
-const secondEl = allCategories.firstElementChild.nextElementSibling;
-
-const secondElTitle = secondEl.firstElementChild;
-console.log('Category:', secondElTitle.textContent);
-
-const secondElLi = secondEl.lastElementChild.children;
-console.log('Elements:', secondElLi.length);
-
-
-const lastEl = allCategories.lastElementChild;
-
-const lastElTitle = lastEl.firstElementChild;
-console.log('Category:', lastElTitle.textContent);
-
-const lastElLi = lastEl.lastElementChild.children;
-console.log('Elements:', lastElLi.length);
+    console.log('Category:', `${elementTitle}`);
+    console.log('Elements:', `${titleElementsLength}`);
+});
